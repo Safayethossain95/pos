@@ -1,0 +1,113 @@
+.main {
+  min-height: 100vh;
+  p {
+    color: #5c6ac4;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+  }
+  button {
+    color: #5c6ac4;
+    background-color: #e7e9f6;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 0;
+    padding: 8px 15px;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .left {
+    background-color: #fff;
+    width: 45vw;
+    height: 1400px;
+    border-right: 1px solid #babbbc;
+    .navbar {
+      height: 76px;
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .user {
+      height: 76px;
+      background-color: #eef0f9;
+      border-radius: 4px;
+      width: calc(100% - 40px);
+      margin: 0 20px;
+      margin-bottom: 15px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        margin-right: 0px;
+      }
+
+      .div {
+        img {
+          margin-right: 15px;
+        }
+        display: flex;
+        align-items: center;
+      }
+    }
+    .cart {
+      padding: 0 20px;
+      img {
+        margin-right: 12px;
+      }
+      p {
+        color: #71808c;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0;
+      }
+      table {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      tr {
+        td {
+          border-top: 1px solid #babbbc;
+          border-bottom: 1px solid #babbbc;
+          &.last {
+            border-right: 1px solid #babbbc;
+          }
+          &.reallast {
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            padding: 6px 10px;
+          }
+          &:nth-child(1) {
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            padding: 6px 10px;
+          }
+          &:nth-child(2) {
+            border-left: 1px solid #babbbc;
+          }
+
+          padding: 6px 20px;
+          .imgmarginzero {
+            img {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    background-color: #f8f6f4;
+    width: 55vw;
+  }
+}
